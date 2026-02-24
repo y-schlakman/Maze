@@ -1,0 +1,5 @@
+##,##,##
+##,^^,##
+##,<<,## // Window pops up here
+##,>>,## // Prints what you typed
+##,(),##
