@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# PyCharm (JetBrains)
+.idea/
+*.iws
+
+# Build & Distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# OS Specific
+.DS_Store
+Thumbs.db
