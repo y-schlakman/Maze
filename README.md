@@ -1,45 +1,3 @@
-Good catches on both fronts. Switching to `pygame-ce` (Pygame Community Edition) is definitely the better move, as it's actively maintained, faster, and much more modern. Adding the "vibe coding" note also sets the perfect tone for anyone visiting the repository.
-
-Here are the finalized versions of those two files:
-
-### 1. The Updated `pyproject.toml`
-
-I swapped out `pygame` for `pygame-ce` in the dependencies list.
-
-```toml
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "maze-esolang"
-version = "1.0.0"
-description = "A Python interpreter and visual debugger for the 2D esoteric programming language, Maze."
-readme = "README.md"
-authors = [
-    {name = "Yosi Schlakman"}
-]
-license = {text = "MIT"}
-requires-python = ">=3.8"
-dependencies = [
-    "pygame-ce>=2.4.0"
-]
-
-[project.scripts]
-maze = "maze.__main__:main"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-```
-
----
-
-### 2. The Updated `README.md`
-
-I added your note right at the top so visitors immediately understand the spirit of the project.
-
-```markdown
 # Maze Esolang Interpreter
 
 A robust Python interpreter and visual interactive debugger for **Maze**, a 2D esoteric programming language where execution flow is determined by "cars" navigating a grid of ASCII walls and paths.
@@ -48,7 +6,7 @@ A robust Python interpreter and visual interactive debugger for **Maze**, a 2D e
 
 This project provides both a blazing-fast CLI execution environment and a feature-rich graphical debugger powered by Pygame Community Edition (`pygame-ce`), making it easy to build, step through, and understand complex Turing-complete Maze programs.
 
-**Original Language Credit:** Maze was originally conceived by the Esolang community (User: *Sʨɠts*). Read the full language specification on the [Esolang Wiki](https://esolangs.org/wiki/Maze).
+**Original Language Credit:** Maze was originally conceived by the Esolang community. Read the full language specification on the [Esolang Wiki](https://esolangs.org/wiki/Maze).
 
 ---
 
